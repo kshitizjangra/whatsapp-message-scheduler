@@ -6,8 +6,8 @@ import time
 app = Flask(__name__)
 
 # Twilio credentials (from your free trial account)
-account_sid = 'AC237a347c5679e025031c3087d4a801fd'
-auth_token = '2c22da73fcf71dfa0c2312021687ea43'
+account_sid = 'YOUR ACCOUNT SID'
+auth_token = 'YOUR AUTH TOKEN'
 client = Client(account_sid, auth_token)
 
 @app.route("/", methods=["GET", "POST"])
