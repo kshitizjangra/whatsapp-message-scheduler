@@ -1,4 +1,4 @@
-# WhatsApp Message Scheduler
+# WhatsApp Message Scheduler 1.0
 
 A simple Flask-based web application that allows users to schedule WhatsApp messages to be sent at a specific time using the [Twilio API](https://www.twilio.com/). This project enables users to send messages to WhatsApp numbers at a scheduled time, making it easier to automate notifications, reminders, or important messages.
 
