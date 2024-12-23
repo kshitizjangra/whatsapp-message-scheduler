@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Message Scheduler</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e5ddd5; /* WhatsApp-like light background */
+            color: #075e54; /* WhatsApp green */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 5% auto;
+            width: 90%;
+            max-width: 450px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #075e54; /* WhatsApp header green */
+            color: #fff;
+            padding: 20px 15px;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        header img {
+            width: 40px;
+            height: 40px;
+        }
+
+        header span {
+            font-size: 1.4rem;
+        }
+
+        label {
+            font-size: 1.1rem;
+            margin: 15px 0 5px;
+            display: block;
+            color: #333;
+            padding-left: 10px;
+        }
+
+        input, textarea, button {
+            width: 90%;
+            margin: 10px auto;
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        input[type="text"], textarea, input[type="time"] {
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        input:focus, textarea:focus, input[type="time"]:focus {
+            outline: none;
+            border: 1px solid #25d366;
+            box-shadow: 0px 0px 8px rgba(37, 211, 102, 0.7);
+        }
+
+        button {
+            background: #25d366;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background: #20c253;
+            transform: translateY(-2px);
+            box-shadow: 0px 4px 10px rgba(37, 211, 102, 0.4);
+        }
+
+        footer {
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+        }
+
+        footer a {
+            color: #075e54;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Logo">
+            <span>WhatsApp Message Scheduler</span>
+        </header>
+        <form method="POST">
+            <label for="phone">📱 Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="+91XXXXXXXXXX" required>
+
+            <label for="message">💬 Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here.." required></textarea>
+
+            <label for="time">⏰ Scheduled Time (24-hour format):</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">📩 Schedule Message</button>
+        </form>
+    </div>
+    <footer>
+        Made with ❤️ by Kshitiz | <a href="https://github.com/kshitizjangra">GitHub</a>
+    </footer>
+</body>
+</html>
